@@ -36,7 +36,6 @@ public class CalculatorGroupProject {
         operation.setFont(new Font("Courier", Font.BOLD, 24));
 
         // Add number buttons
-
         JButton one = new JButton("1");
         JButton two = new JButton("2");
         JButton three = new JButton("3");
@@ -48,6 +47,7 @@ public class CalculatorGroupProject {
         JButton nine = new JButton("9");
         JButton zero = new JButton("0");
 
+        //Add the operation buttons
         JButton add = new JButton("+");
         JButton subtract = new JButton("-");
         JButton multiply = new JButton("*");
@@ -56,7 +56,7 @@ public class CalculatorGroupProject {
         JButton equal = new JButton("=");
         JButton delete = new JButton("Delete");
 
-
+        //Change the equal and delete button sizes
         equal.setPreferredSize(new Dimension(90, 30));
         equal.setBackground(Color.decode("#3E97D1"));
         delete.setPreferredSize(new Dimension(90, 30));
@@ -85,7 +85,7 @@ public class CalculatorGroupProject {
         pane.add(delete);
 
 
-
+        //
         ActionListener numbercheck = new ActionListener() {
             public void actionPerformed(ActionEvent applesauce)
             {   String result = applesauce.getActionCommand();
